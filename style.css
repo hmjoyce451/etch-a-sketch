@@ -11,13 +11,19 @@ body {
     justify-content: center;
     align-items: center;
 }
+.main-container {
+    background-color: #fff;
+    margin: 1rem auto;
+    width: 20.2rem;
+    border: 1px solid #000;
+}
 #container {
     height: 400px;
     width: 400px;
     font-size: 0;
-    margin: auto;
+    margin: 0 auto;
 }
 .square {
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     display: inline-block;
 }

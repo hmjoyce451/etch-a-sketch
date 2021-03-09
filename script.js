@@ -15,9 +15,24 @@ function makeGrid(gridSize) {
         }
     }
 }
-
+function getRandomColor() {
+    return Math.floor(Math.random()*16777215).toString(16);
+}
 function getGridSize() {
     gridSize = prompt('Enter a grid amount between 12 and 64', 16);
     makeGrid(gridSize);
 }
+
+container.addEventListener('mouseover', function(e) {
+    const squares = e.target;
+    if(!squares.classList.contains('square')) {
+        return;
+    }else if(squares.style.backgroundColor) {
+        return
+    } 
+    else
+    squares.style.backgroundColor = '#' + getRandomColor();
+});
+
+
 getGridSize();
