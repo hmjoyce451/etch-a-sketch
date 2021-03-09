@@ -1,4 +1,5 @@
 const container = document.getElementById('container');
+const clearBtn = document.querySelector('.clear-btn');
 
 function makeGrid(gridSize) {
     for(let i=0; i<gridSize; i++) {
@@ -34,5 +35,9 @@ container.addEventListener('mouseover', function(e) {
     squares.style.backgroundColor = '#' + getRandomColor();
 });
 
+clearBtn.addEventListener('click', function() {
+    const squares = document.querySelectorAll('.square');
+    squares.forEach(square => square.style.backgroundColor = '');
+})
 
 getGridSize();
