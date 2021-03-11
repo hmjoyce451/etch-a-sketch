@@ -11,13 +11,9 @@ body {
     justify-content: center;
     align-items: center;
 }
-.main-container {
-    background-color: #fff;
-    margin: 1rem auto;
-    width: 404px;
-    border: 1px solid #000;
-}
+
 #container {
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     height: 400px;
     width: 400px;
     font-size: 0;
@@ -31,7 +27,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: 1rem auto;
     border: none;
     background-color: red;
     color: #fff;
@@ -41,4 +37,10 @@ body {
 }
 .clear-btn:hover {
     cursor: pointer;
+}
+#select {
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
